@@ -20,7 +20,7 @@ const currencySlice = createSlice({
         },
         updateEur(state, action) {
             state.eur = action.payload;
-            state.usd = action.payload * 1.07;
+            state.usd = action.payload / 1.07;
         },
     }
 });
